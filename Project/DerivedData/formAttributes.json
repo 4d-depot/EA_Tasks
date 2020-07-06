@@ -1,0 +1,24 @@
+﻿{
+	"forms": {
+		"taskManager": {
+			"timeStamp": "2020-07-06T16:32:04.174Z",
+			"destination": "detailScreen"
+		},
+		"splashScreen": {
+			"timeStamp": "2020-07-06T16:32:04.192Z",
+			"destination": "detailScreen"
+		},
+		"taskList": {
+			"timeStamp": "2020-07-06T16:32:04.177Z",
+			"destination": "detailScreen"
+		},
+		"categoryList": {
+			"timeStamp": "2020-07-06T16:32:04.176Z",
+			"destination": "detailScreen"
+		},
+		"taskInput": {
+			"timeStamp": "2020-07-06T16:32:04.187Z",
+			"destination": "detailScreen"
+		}
+	}
+}

@@ -1,0 +1,615 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 619,
+					"height": 634,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 620,
+					"height": 41,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"Line": {
+					"type": "line",
+					"top": 40,
+					"left": 0,
+					"width": 620,
+					"sizingX": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 40,
+					"left": 0,
+					"width": 620,
+					"sizingX": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 40,
+					"left": 0,
+					"width": 620,
+					"height": 6,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 159,
+					"left": 1,
+					"width": 619,
+					"height": 434,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "#DDDDDD"
+				},
+				"titleField": {
+					"type": "input",
+					"top": 11,
+					"left": 10,
+					"width": 597,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ent.Title",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Title",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/titleField.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"startDateField": {
+					"type": "input",
+					"top": 58,
+					"left": 104,
+					"width": 120,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.StartDate",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Start Date",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/startDateField.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"dueDateField": {
+					"type": "input",
+					"top": 58,
+					"left": 410,
+					"width": 120,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.DueDate",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Due Date",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/dueDateField.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"categoryField": {
+					"type": "input",
+					"top": 91,
+					"left": 104,
+					"width": 160,
+					"height": 17,
+					"dataSource": "Form:C1466.category",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "None",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/categoryField.4dm",
+					"events": [
+						"onLosingFocus",
+						"onAfterEdit"
+					]
+				},
+				"highPriorityRadio": {
+					"type": "radio",
+					"top": 88,
+					"left": 408,
+					"width": 55,
+					"height": 24,
+					"dataSource": "Form:C1466.highPriority",
+					"text": "High",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/highPriorityRadio.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lowPriorityRadio": {
+					"type": "radio",
+					"top": 88,
+					"left": 469,
+					"width": 55,
+					"height": 24,
+					"dataSource": "Form:C1466.lowPriority",
+					"text": "Low",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/lowPriorityRadio.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"noPriorityRadio": {
+					"type": "radio",
+					"top": 88,
+					"left": 530,
+					"width": 55,
+					"height": 24,
+					"dataSource": "Form:C1466.noPriority",
+					"text": "None",
+					"stroke": "#000000",
+					"focusable": false,
+					"radioGroup": "Group15",
+					"method": "ObjectMethods/noPriorityRadio.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"statusField": {
+					"type": "input",
+					"top": 124,
+					"left": 104,
+					"width": 160,
+					"height": 16,
+					"dataSource": "Form:C1466.status",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "None",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/Status List"
+					},
+					"requiredList": {
+						"$ref": "/SOURCES/lists.json#/Status List"
+					},
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/statusField.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"progressBar": {
+					"type": "ruler",
+					"top": 127,
+					"left": 412,
+					"width": 135,
+					"height": 15,
+					"dataSource": "Form:C1466.ent.Percent",
+					"continuousExecution": false,
+					"max": 100,
+					"graduationStep": 5,
+					"step": 5,
+					"method": "ObjectMethods/progressBar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"percentField": {
+					"type": "input",
+					"top": 124,
+					"left": 551,
+					"width": 27,
+					"height": 16,
+					"dataSource": "Form:C1466.ent.Percent",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/percentField.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"descriptionField": {
+					"type": "input",
+					"top": 166,
+					"left": 10,
+					"width": 593,
+					"height": 417,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.ent.Description",
+					"fontFamily": ".AppleSystemUIFont",
+					"fontSize": 13,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Description",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/descriptionField.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 58,
+					"left": 299,
+					"width": 100,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Due Date"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 58,
+					"left": 4,
+					"width": 88,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Start Date"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 91,
+					"left": 4,
+					"width": 88,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Category"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 91,
+					"left": 299,
+					"width": 100,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Priority"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 124,
+					"left": 4,
+					"width": 88,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Status"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 124,
+					"left": 299,
+					"width": 100,
+					"height": 17,
+					"stroke": "#7281A3",
+					"textAlign": "right",
+					"text": "Complete"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 124,
+					"left": 569,
+					"width": 20,
+					"height": 16,
+					"stroke": "#000000",
+					"class": "default",
+					"textAlign": "right",
+					"text": "%"
+				},
+				"saveButton": {
+					"type": "button",
+					"top": 602,
+					"left": 522,
+					"width": 90,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"class": "default",
+					"focusable": false,
+					"text": "Save",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/saveButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"delButton": {
+					"type": "button",
+					"top": 602,
+					"left": 8,
+					"width": 90,
+					"height": 24,
+					"sizingY": "move",
+					"class": "default",
+					"focusable": false,
+					"text": "Delete",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/delButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 40,
+					"left": 0,
+					"height": 593,
+					"sizingY": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 41,
+					"left": 619,
+					"height": 593,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"stroke": "#DDDDDD"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 80,
+					"left": 98,
+					"width": 168,
+					"stroke": "#DDDDDD"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 113,
+					"left": 98,
+					"width": 168,
+					"stroke": "#DDDDDD"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 146,
+					"left": 98,
+					"width": 168,
+					"stroke": "#DDDDDD"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 80,
+					"left": 405,
+					"width": 188,
+					"stroke": "#DDDDDD"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 113,
+					"left": 405,
+					"width": 188,
+					"stroke": "#DDDDDD"
+				},
+				"Line10": {
+					"type": "line",
+					"top": 146,
+					"left": 405,
+					"width": 188,
+					"stroke": "#DDDDDD"
+				},
+				"textPreview": {
+					"type": "input",
+					"top": 538,
+					"left": 179,
+					"width": 42,
+					"height": 17,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.textPreview",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"autofill_preview_lb": {
+					"type": "listbox",
+					"top": 534,
+					"left": 241,
+					"width": 39,
+					"height": 25,
+					"visibility": "hidden",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "25px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.autofill_preview",
+					"currentItemSource": "Form:C1466.selectedCategory",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#E6EFFF",
+					"alternateFill": "#FFFFC0",
+					"verticalAlign": "middle",
+					"method": "ObjectMethods/autofill_preview_lb.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "autofill_preview_at",
+							"dataSource": "This:C1470.Name",
+							"width": 379,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#E6EFFF",
+							"alternateFill": "#FFFFC0",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Header2",
+								"stroke": "#000000",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#E6EFFF",
+								"verticalAlign": "middle"
+							}
+						}
+					]
+				},
+				"startDateButton": {
+					"type": "subform",
+					"top": 58,
+					"left": 247,
+					"width": 19,
+					"height": 16,
+					"dataSource": "startDate_d",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateButton",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/startDateButton.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"dueDateButton": {
+					"type": "subform",
+					"top": 58,
+					"left": 574,
+					"width": 19,
+					"height": 16,
+					"dataSource": "dueDate_d",
+					"dataSourceTypeHint": "date",
+					"detailForm": "DateButton",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/dueDateButton.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"titleField",
+				"startDateField",
+				"dueDateField",
+				"categoryField",
+				"Group15",
+				"highPriorityRadio",
+				"lowPriorityRadio",
+				"noPriorityRadio",
+				"statusField",
+				"progressBar",
+				"descriptionField",
+				"autofill_preview_lb",
+				"startDateButton",
+				"dueDateButton"
+			]
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group15": [
+				"highPriorityRadio",
+				"lowPriorityRadio",
+				"noPriorityRadio"
+			]
+		}
+	}
+}

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="F4FF85F5E02A4D6DB3C15267C7F87104" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Task" uuid="EBBE24E7F8E7476BA45F79EF9DCB373E" id="2">
+		<field name="ID" uuid="78D0E3476275415C8FBF2782ABDDA53F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Title" uuid="6C94644AA76549BD91FFEE6F773239AE" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="StartDate" uuid="B80286295A7647E29370CDEB13FF6F45" type="8" never_null="true" id="3"/>
+		<field name="DueDate" uuid="FCFBCBC4FA24459C930F1BD0B72600A8" type="8" never_null="true" id="4"/>
+		<field name="Status" uuid="5D92A9EA5C0B403A963A78BDD1770477" type="4" never_null="true" id="5"/>
+		<field name="Priority" uuid="D2FE084A851148149F8C3DAAD35D6A57" type="4" never_null="true" id="6"/>
+		<field name="CategoryID" uuid="7CAD8E4D9293498CB5B2996736B2CAB9" type="4" never_null="true" id="7"/>
+		<field name="Description" uuid="FFC94CCD875F4ABCBE15B3B6AD9A29A5" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Percent" uuid="3AA8560CB81B4FD6A5B5160777AAFA99" type="4" never_null="true" id="9"/>
+		<primary_key field_name="ID" field_uuid="78D0E3476275415C8FBF2782ABDDA53F"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="13">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="17.76953125" width="187.34765625" height="323.63671875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Category" uuid="FC3F4A65929E474985A3E8A939FEC91C" id="3">
+		<field name="ID" uuid="BA640647C6D04D139C75EF931187606E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="AA19B96E967A4E1D8FC7AABD4362A7B0" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="BA640647C6D04D139C75EF931187606E"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="297.1875" top="19.69921875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="51AE27672865431FA4BCEFF5BFB8209B" name_Nto1="category" name_1toN="tasks" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="7CAD8E4D9293498CB5B2996736B2CAB9" name="CategoryID">
+				<table_ref uuid="EBBE24E7F8E7476BA45F79EF9DCB373E" name="Task"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="BA640647C6D04D139C75EF931187606E" name="ID">
+				<table_ref uuid="FC3F4A65929E474985A3E8A939FEC91C" name="Category"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="9C6A461AA7C0473D929CFF383E8A86FA" type="7">
+		<field_ref uuid="7CAD8E4D9293498CB5B2996736B2CAB9" name="CategoryID">
+			<table_ref uuid="EBBE24E7F8E7476BA45F79EF9DCB373E" name="Task"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A92AB57CF1B44B9BA4DAC1A316CA4CA6" type="7">
+		<field_ref uuid="BA640647C6D04D139C75EF931187606E" name="ID">
+			<table_ref uuid="FC3F4A65929E474985A3E8A939FEC91C" name="Category"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A986C5E80600460B80B68980CCD4C285" type="7">
+		<field_ref uuid="78D0E3476275415C8FBF2782ABDDA53F" name="ID">
+			<table_ref uuid="EBBE24E7F8E7476BA45F79EF9DCB373E" name="Task"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="Tasks" structure_file_name="Tasks_Rev" data_file_path=":Tasks_Rev.4DD">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

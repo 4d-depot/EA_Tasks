@@ -1,0 +1,188 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 560,
+					"left": 0,
+					"width": 967,
+					"height": 39,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "transparent"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 570,
+					"left": 7,
+					"width": 326,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.result",
+					"stroke": "#808080",
+					"focusable": false,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"tasks_LB": {
+					"type": "listbox",
+					"top": 0,
+					"left": 1,
+					"width": 966,
+					"height": 559,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "30px",
+					"headerHeight": "24px",
+					"footerHeight": "10px",
+					"dataSource": "Form:C1466.data",
+					"currentItemSource": "Form:C1466.currItem",
+					"currentItemPositionSource": "Form:C1466.currPos",
+					"selectedItemsSource": "Form:C1466.selItems",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "middle",
+					"borderStyle": "none",
+					"method": "ObjectMethods/tasks_LB.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.Percent=100",
+							"dataSourceTypeHint": "boolean",
+							"width": 35,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.Title",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Title",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.DueDate",
+							"width": 88,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"dateFormat": "short",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Due Date",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "formatTaskStatus ",
+							"width": 628,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"styledText": true,
+							"contextMenu": "none",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Progress",
+								"verticalAlign": "middle"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"verticalAlign": "middle"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

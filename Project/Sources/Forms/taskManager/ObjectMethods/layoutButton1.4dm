@@ -1,0 +1,21 @@
+C_LONGINT:C283($l;$t;$r;$b)
+C_LONGINT:C283($l1;$t1;$r1;$b1)
+C_LONGINT:C283($l2;$t2;$r2;$b2)
+
+OBJECT SET VISIBLE:C603(*;"layoutButton1Rect";True:C214)
+OBJECT SET VISIBLE:C603(*;"layoutButton2Rect";False:C215)
+OBJECT SET VISIBLE:C603(*;"task_SF";True:C214)
+
+OBJECT GET COORDINATES:C663(*;"tasks_SF";$l;$t;$r;$b)
+OBJECT GET COORDINATES:C663(*;"task_SF";$l1;$t1;$r1;$b1)
+OBJECT GET COORDINATES:C663(*;"searchRect";$l2;$t2;$r2;$b2)
+
+OBJECT SET COORDINATES:C1248(*;"tasks_SF";$l;$b2+6;580;$b)
+OBJECT SET COORDINATES:C1248(*;"searchRect";$l2;$t2;580;$b2)
+OBJECT SET COORDINATES:C1248(*;"searchDropdown";550;57;570;77)
+OBJECT SET COORDINATES:C1248(*;"arrowDown";555;65;565;71)
+OBJECT SET COORDINATES:C1248(*;"searchText";280;59;535;76)
+
+EXECUTE METHOD IN SUBFORM:C1085("tasks_SF";"setListboxColumnWidth")
+
+Form:C1466.taskListDetailMode:=True:C214

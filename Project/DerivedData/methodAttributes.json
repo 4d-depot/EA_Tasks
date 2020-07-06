@@ -1,0 +1,97 @@
+﻿{
+	"methods": {
+		"setListboxColumnWidth": {
+			"timeStamp": "2020-07-06T16:32:02.146Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"toggleTaskInput": {
+			"timeStamp": "2020-07-06T16:32:02.142Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"findTask": {
+			"timeStamp": "2020-07-06T16:32:02.144Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"formatTaskStatus": {
+			"timeStamp": "2020-07-06T16:32:02.145Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"loadCategories": {
+			"timeStamp": "2020-07-06T16:32:02.141Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"loadTaskInput": {
+			"timeStamp": "2020-07-06T16:32:02.142Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"_openTasksManager": {
+			"timeStamp": "2020-07-06T16:32:02.140Z"
+		},
+		"_openSplashScreen": {
+			"timeStamp": "2020-07-06T16:32:02.146Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"highlightRow": {
+			"timeStamp": "2020-07-06T16:32:02.141Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"findCategory": {
+			"timeStamp": "2020-07-06T16:32:02.144Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"loadTasks": {
+			"timeStamp": "2020-07-06T16:32:02.141Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2020-07-06T16:32:02.145Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2020-07-06T16:32:02.145Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"loadTaskManagerController": {
+			"timeStamp": "2020-07-06T16:32:02.143Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"startSplashScreen": {
+			"timeStamp": "2020-07-06T16:32:02.147Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"validateTaskFields": {
+			"timeStamp": "2020-07-06T16:32:02.143Z",
+			"attributes": {
+				"invisible": true
+			}
+		}
+	}
+}

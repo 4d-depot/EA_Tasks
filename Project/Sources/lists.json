@@ -1,0 +1,23 @@
+﻿{
+	"Status List": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "Not Started",
+				"ref": 1,
+				"editable": false
+			},
+			{
+				"text": "In Progress",
+				"ref": 2,
+				"editable": false
+			},
+			{
+				"text": "Completed",
+				"ref": 3,
+				"editable": false
+			}
+		]
+	}
+}

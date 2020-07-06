@@ -1,0 +1,59 @@
+﻿{
+	"Forms": {
+		"forms": [
+			"categoryList",
+			"taskInput",
+			"taskList",
+			"taskManager"
+		]
+	},
+	"Project Methods": {
+		"methods": [
+			"_openTasksManager",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"findCategory",
+			"findTask",
+			"formatTaskStatus",
+			"highlightRow",
+			"loadCategories",
+			"loadTaskInput",
+			"loadTaskManagerController",
+			"loadTasks",
+			"setListboxColumnWidth",
+			"startSplashScreen",
+			"toggleTaskInput",
+			"validateTaskFields"
+		]
+	},
+	"Splashscreen": {
+		"methods": [
+			"_openSplashScreen"
+		],
+		"forms": [
+			"splashScreen"
+		]
+	},
+	"Tables": {
+		"tables": [
+			"Category",
+			"Task"
+		]
+	},
+	"Tasks": {
+		"groups": [
+			"Forms",
+			"Project Methods",
+			"Tables"
+		]
+	},
+	"Unused": {
+		"forms": [
+			"[Category]Input",
+			"[Category]Output",
+			"[Task]Input",
+			"[Task]Output"
+		]
+	},
+	"trash": {}
+}
