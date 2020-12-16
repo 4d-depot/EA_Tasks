@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="" uuid="F4FF85F5E02A4D6DB3C15267C7F87104" collation_locale="en">
+<base name="Tasks" uuid="F4FF85F5E02A4D6DB3C15267C7F87104" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Task" uuid="EBBE24E7F8E7476BA45F79EF9DCB373E" id="2">
 		<field name="ID" uuid="78D0E3476275415C8FBF2782ABDDA53F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
@@ -10,7 +10,7 @@
 		<field name="Status" uuid="5D92A9EA5C0B403A963A78BDD1770477" type="4" never_null="true" id="5"/>
 		<field name="Priority" uuid="D2FE084A851148149F8C3DAAD35D6A57" type="4" never_null="true" id="6"/>
 		<field name="CategoryID" uuid="7CAD8E4D9293498CB5B2996736B2CAB9" type="4" never_null="true" id="7"/>
-		<field name="Description" uuid="FFC94CCD875F4ABCBE15B3B6AD9A29A5" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Description" uuid="FFC94CCD875F4ABCBE15B3B6AD9A29A5" type="10" never_null="true" id="8"/>
 		<field name="Percent" uuid="3AA8560CB81B4FD6A5B5160777AAFA99" type="4" never_null="true" id="9"/>
 		<primary_key field_name="ID" field_uuid="78D0E3476275415C8FBF2782ABDDA53F"/>
 		<table_extra input_form="Input" output_form="Output">
