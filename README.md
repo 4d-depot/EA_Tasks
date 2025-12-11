@@ -3,6 +3,10 @@ Featuring: Subform, Listbox, and Multi-Styled Text
 
 This application provides a few basic functionalities to manage a list of tasks. It is built to allow the user to create, update, and track the progress of each task with ease. The implementation of this application utilizes a combination of Subform, Listbox, and a simple Gantt chart implementation using Multi-Styled text.
 
+<p align="center">
+<img src="Resources/Images/task.png" alt="Tasks Application" width="33%">
+</p>
+
 Minimum requirement: 4D v19 LTS
 
 ## Installing and Using a 4D Project
